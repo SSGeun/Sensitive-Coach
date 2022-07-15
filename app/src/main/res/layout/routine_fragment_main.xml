@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="루 틴 관 리"
+            android:id="@+id/label"
+            android:gravity="center"
+            android:textColor="#20a385"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:background="#fbe37d"
+            />
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:id="@+id/floatingActionButton"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_gravity="bottom|end"
+                android:src="@drawable/routineplus"
+                app:fabCustomSize="62dp"
+                app:maxImageSize="64dp"
+                app:srcCompat="?attr/actionModeShareDrawable"
+                />
+    </FrameLayout>
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

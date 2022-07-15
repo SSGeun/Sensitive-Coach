@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:backgroundTint="#FFFFFF"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="일 정 관 리"
+                android:id="@+id/label"
+                android:gravity="center"
+                android:textColor="#20a385"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="#fbe37d"
+                />
+
+            <com.applikeysolutions.cosmocalendar.view.CalendarView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_above="@+id/ll_settings"
+               />
+
+            <LinearLayout
+                android:id="@+id/ll_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioGroup
+                    android:id="@+id/rg_selection_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_weight="1"
+                    android:checkedButton="@+id/rb_single">
+
+                    <RadioButton
+                        android:id="@+id/rb_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:text="single" />
+
+                    <RadioButton
+                        android:id="@+id/rb_multiple"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="multiple" />
+
+                    <RadioButton
+                        android:id="@+id/rb_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="range" />
+
+                    <RadioButton
+                        android:id="@+id/rb_none"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="none" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="0dp"
+            android:background="@color/bottomNav"
+            app:itemBackground="@color/bottomNav"
+            app:itemIconTint="@drawable/item_color"
+            app:itemTextColor="@drawable/item_color"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/menu_bottom" />
+    </LinearLayout>
+</RelativeLayout>

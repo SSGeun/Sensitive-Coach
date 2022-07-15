@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="bottomNav">#35704b</color>
+
+    <!-- 배경색 -->
+    <color name="mainBackground">#FFFFFF</color>
+
+    <!-- 글자색 -->
+    <color name="mainTextColor">#16A085</color>
+
+    <!-- 식단 관리-->
+    <color name="dietMenuManagementTopBar">#FBE37D</color>
+    <color name="dietMenuManagementTopBarTextView">#20A385</color>
+    
+    <color name="dietMenuRegisterInputTagBackground">#FFFFFF</color>
+    <color name="dietMenuRegisterInputTagBorder">#D1D1D1</color>
+    <color name="dietMenuRegisterInputTagTextColor">#676767</color>
+
+    <color name="dietMenuRegisterButtonColor">#FA9919</color>
+    <color name="dietMenuRegisterCancelButtonColor">#FA9919</color>
+
+    <color name="dietMenuInquiryText">#343434</color>
+    <color name="dietMenuInquiryDateAte">#404040</color>
+    <color name="dietMenuInquiryTitle">#404040</color>
+    <color name="dietMenuInquiryTimeText">#FA9919</color>
+    <color name="dietMenuInquiryCenterLine">#C3C3C3</color>
+
+    <color name="dietMenuGraphInquiryTotalCalorieText">#16A085</color>
+
+</resources>

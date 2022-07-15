@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/mainBackground"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/inputPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <EditText
+            android:id="@+id/inputRoutineName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Routine Name"
+            android:imeOptions="actionNext"
+            android:inputType="textPersonName"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/inputExerciseID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Exercise ID"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:lines="1"
+            android:maxLines="1"
+            android:padding="8dp"
+            android:singleLine="true"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/actionAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Add" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/inputPanel" />
+
+</RelativeLayout>

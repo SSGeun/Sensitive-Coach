@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#50aa61"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/Infoimg"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="5dip"
+        android:gravity="left"
+        android:onClick="openBrowser"
+        android:src="@drawable/ex1" />
+
+    <TextView
+        android:id="@+id/classInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="9dip"
+
+        android:layout_marginTop="11dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="11dip"
+        android:textColor="#000000"
+        android:textSize="27dip"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/timeInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="9dip"
+        android:layout_marginTop="25dip"
+        android:layout_marginRight="5dip"
+        android:layout_marginBottom="25dip"
+        android:background="@drawable/bigcircle"
+        android:gravity="center"
+        android:text="15회/1세트"
+        android:textColor="#16a085"
+        android:textSize="25dip"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="9dip"
+            android:layout_marginTop="3dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="11dip"
+            android:background="@drawable/button_background_dark"
+            android:text="START"
+            android:textColor="#FFFFFF"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/addToRoutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="9dip"
+            android:layout_marginTop="3dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="11dip"
+            android:background="@drawable/button_background"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="ADD TO ROUTINE"
+            android:textColor="#FFF"
+            android:textSize="13dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

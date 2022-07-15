@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip"
+    android:background="@color/mainBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title Text"
+            android:id="@+id/num"
+            android:textColor="#f1c40f"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="33dip"
+            android:layout_marginLeft="9dip"
+            android:background="@drawable/routine_num"
+            android:layout_marginTop="7dip"
+            android:layout_marginRight="5dip"
+            android:layout_marginBottom="4dip" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Text"
+            android:id="@+id/name"
+            android:textColor="#000000"
+            android:layout_marginLeft="9dip"
+            android:gravity="center"
+            android:textSize="18dip"
+            android:layout_marginTop="3dip"
+            android:layout_marginRight="5dip"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sub Text"
+            android:id="@+id/desc"
+            android:textColor="#919191"
+            android:layout_marginLeft="9dip"
+            android:gravity="center"
+            android:textSize="13dip"
+            android:paddingTop="2dp"
+            android:layout_marginRight="5dip"
+             />
+    </LinearLayout>
+</LinearLayout>

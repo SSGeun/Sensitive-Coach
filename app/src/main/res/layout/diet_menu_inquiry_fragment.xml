@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    android:orientation="vertical">
+
+    <!-- 상단 바 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/dietMenuManagementTopBar">
+
+        <!-- 식단 날짜 텍스트 -->
+        <TextView
+            android:id="@+id/dietMenuInquiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="2020. 06. 07"
+            android:textAlignment="center"
+            android:textColor="@color/dietMenuManagementTopBarTextView"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 식단 관리 아이콘 -->
+        <ImageView
+            android:id="@+id/dietMenuInquiryIcon"
+            android:layout_width="137dp"
+            android:layout_height="121dp"
+            android:layout_centerHorizontal="true"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:src="@drawable/diet_menu_icon" />
+
+        <!-- 총 칼로리 -->
+        <TextView
+            android:id="@+id/dietMenuInquiryTotalCalorie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dietMenuInquiryIcon"
+            android:layout_centerHorizontal="true"
+            android:text="1254 kcal"
+            android:textColor="@color/dietMenuInquiryDateAte"
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dietMenuInquiryLackOfNutrientsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:paddingRight="0dp"
+            android:text="식단 조회"
+            android:textColor="@color/dietMenuInquiryTitle"
+            android:textSize="40dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="7dp"
+            android:layout_toRightOf="@+id/dietMenuInquiryLackOfNutrientsText"
+            android:background="@drawable/nav"
+            android:paddingTop="70dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_margin="20dp"
+        android:background="@color/dietMenuInquiryCenterLine" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/dietMenuInquiryItemList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            tools:listitem="@layout/diet_menu_inquiry_item_list" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:src="@drawable/red_plus"
+            app:fabCustomSize="62dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:maxImageSize="64dp"
+            app:srcCompat="?attr/actionModeShareDrawable" />
+    </FrameLayout>
+
+</LinearLayout>

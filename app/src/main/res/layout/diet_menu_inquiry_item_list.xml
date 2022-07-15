@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/inquiryTimeAte"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/diet_menu_inquiry_time_text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp"
+        android:text="아침"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/inquiryFoodImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/vegetable_icon" />
+
+        <TextView
+            android:id="@+id/inquiryFoodNamePerServings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="닭가슴살 120g / 150kcal"
+            android:textColor="@color/dietMenuInquiryText"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
